@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="./script.js" defer></script>
+</head>
+<body>
+    <!-- header -->
+    <header>
+       <h2>QR Code Generator</h2>
+    </header>
+    <!-- main -->
+     <main>
+        <div class="image">
+            <img src="./images/qr-image.gif" alt="image">
+        </div>
+        <div class="content">
+            <h2>QR Code Generator</h2>
+            <p>QR
+                Codes
+                allow smartphone
+                users to access
+                your website simply and
+                quickly.</p>
+                <p>Enter your URL
+                    below
+                    to generate a QR Code and download the image.</p>
+                    <form id="generate-form">
+                        <input type="url"
+                        id="url"
+                        placeholder="Enter URL"
+                        class="inputurl" >
+                        <select name="size" id="size" class="size">
+                            <option value="100">100*100</option>
+                            <option value="200">200*200</option>
+                            <option value="300" selected>300*300</option>
+                            <option value="400">400*400</option>
+                            <option value="500">500*500</option>
+                            <option value="600">600*600</option>
+                            <option value="700">700*700</option>
+
+                        </select>
+                        <button class="submit" type="submit">Generator QR Code</button>
+
+                    </form>
+        </div>
+     </main>
+     <div class="generated" >
+        <!-- spinner -->
+        <div class="loader" id="spinner"></div>
+        <!-- qr code image apend -->
+        <div id="qrcode">
+            
+        </div>
+     </div>
+</body>
+</html>
