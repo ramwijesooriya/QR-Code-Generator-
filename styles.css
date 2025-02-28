@@ -69,6 +69,20 @@ image{
     color: #fff;
 }
 
+.download-btn{
+    display: block;
+    width: 20%;
+    background-color: brown;
+    text-align: center;
+    margin: 20px auto;
+    padding: 10px 30px;
+    text-decoration:none ;
+    color:#fff ;
+    font-weight: bold;
+    border-radius: 5px;
+    
+}
+
 /* spinner */
 .loader{
     margin: 10px auto;
@@ -107,6 +121,10 @@ image{
 @media screen and (max-width: 600px){
     main{
         flex-direction: column;
+    }
+
+    .content{
+        width: 80%;
     }
     
 }

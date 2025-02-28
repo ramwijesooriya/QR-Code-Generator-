@@ -4,7 +4,7 @@ const qr =document.getElementById("qrcode")
 
 const onGenarateSubmit = (e)=>{
     e.preventDefault();
-    clearnUi();
+    clearUi();
 
     const url =document.getElementById("url").value;
     const size = document.getElementById("size").value
@@ -41,6 +41,10 @@ const generateQrCode=function(url,size){
 
 const clearUi=function(){
     qr.innerHTML="";
+    const savebtn=document.getElementById("savelink")
+    if(savebtn){
+        savebtn.remove();
+    }
 }
 
 
